@@ -1,8 +1,9 @@
 Pasos para instalar la applicacion desde cero
-Laravel 9
-Jetstream
-Inertia
-Vue
+Laravel     9.28
+Jetstream   2.12
+Inertia     0.6.3
+Vue         3.2.31
+Tailwind    3.1
 
 En el directorio code/
     laravel new xt-manager --jet
