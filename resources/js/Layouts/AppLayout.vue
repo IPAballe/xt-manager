@@ -1,13 +1,6 @@
 <script setup>
     import { ref } from 'vue';
     import { Inertia } from '@inertiajs/inertia';
-    import { Head, Link } from '@inertiajs/inertia-vue3';
-    import ApplicationMark from '@/Components/ApplicationMark.vue';
-    import Banner from '@/Components/Banner.vue';
-    import Dropdown from '@/Components/Dropdown.vue';
-    import DropdownLink from '@/Components/DropdownLink.vue';
-    import NavLink from '@/Components/NavLink.vue';
-    import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
     import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
     import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/vue/24/outline'
 
@@ -37,16 +30,16 @@
         'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     }
     const navigation = [
-    { name: 'Dashboard', href: '#', current: true },
-    { name: 'Team', href: '#', current: false },
-    { name: 'Projects', href: '#', current: false },
-    { name: 'Calendar', href: '#', current: false },
-    { name: 'Reports', href: '#', current: false },
+    { name: 'Dashboard',  href: 'dashboard', current: true },
+    { name: 'Accounting', href: '#', current: false },
+    { name: 'Payroll',    href: '#', current: false },
+    { name: 'Stock',      href: 'stock', current: false },
+    { name: 'About',      href: '#', current: false },
     ]
     const userNavigation = [
     { name: 'Your Profile', href: '#' },
-    { name: 'Settings', href: '#' },
-    { name: 'Sign out', href: '#' },
+    { name: 'Settings',     href: '#' },
+    { name: 'Sign out',     href: '#' },
     ]
 
 </script>
@@ -67,7 +60,7 @@
           <div class="flex h-16 items-center justify-between">
             <div class="flex items-center">
               <div class="flex-shrink-0">
-                <img class="h-8 w-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" />
+                <img class="h-8 w-8" src="/favicon.png" alt="XT-Manager" />
               </div>
               <div class="hidden md:block">
                 <div class="ml-10 flex items-baseline space-x-4">
